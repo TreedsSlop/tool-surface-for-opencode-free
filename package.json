@@ -1,0 +1,17 @@
+{
+  "name": "opencode-tool-surface",
+  "version": "0.1.0",
+  "description": "OpenCode plugin that appends a minimal bash+read tool surface to outgoing opencode.ai LLM requests that lack them",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./index.ts",
+  "main": "./index.ts",
+  "scripts": {
+    "build": "esbuild index.ts --outfile=index.js --format=esm --target=es2022 --platform=node",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "22.13.9",
+    "typescript": "5.8.2"
+  }
+}
